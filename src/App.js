@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
+import React,{useState} from 'react';
 function App() {
+  const orders=[100,200,300];
+  const [count,setCount]=useState(()=>{
+    const result=orders.reduce((prev,total)=>{
+      return prev+total;
+      
+    },0)
+    console.log(result);
+     return result;
+   
+  });
+  const handleIncre=()=>{
+     setCount(prevState=> prevState+1);
+     
+  }
+  // voi trg hop la state ban dau la object or array thi ta can phai lay lai state ban dau
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{padding:'20'}}>
+         <h2>{count}</h2>
+         <button onClick={handleIncre}>Click Me!!!</button>
     </div>
   );
 }

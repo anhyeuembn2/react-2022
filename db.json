@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "trieu1",
+      "email": "haitrieunm12@gmail.com",
+      "contact": "06436523",
+      "address": "diem",
+      "id": 3
+    },
+    {
+      "name": "trieubn12",
+      "email": "haitrieu12@gmail.com",
+      "contact": "03643262",
+      "address": "bac ninh1 ",
+      "id": 4
+    },
+    {
+      "name": "thung",
+      "email": "hung03@gmail.com",
+      "contact": "0364569220",
+      "address": "Hai Phong",
+      "id": 5
+    },
+    {
+      "name": "An",
+      "email": "an12@gmail.com",
+      "contact": "03648922636",
+      "address": "Ha Tinh",
+      "id": 6
+    }
+  ]
+}
